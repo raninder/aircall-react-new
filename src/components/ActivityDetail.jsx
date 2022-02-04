@@ -20,7 +20,7 @@ export default function ActivityDetail(props) {
 		console.log("ididid",id);
 
 	 const url = `https://aircall-job.herokuapp.com/activities/${id}`;
-	 useEffect(() => {
+	 
 			axios.get(url)
     .then(response => {
 			console.log("data1", response.data);
@@ -29,7 +29,7 @@ export default function ActivityDetail(props) {
     .catch(error => {
       console.log('Error: ' + error);
       })
-		}, []);
+	
 		console.log("acts",acts.created_at);
 		let data= new Date(acts.created_at);
 		const time = data.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
