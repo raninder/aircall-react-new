@@ -19,7 +19,7 @@ export default function ActivityFeed() {
 		}, []);
 
 	
-	 const allActs = acts.map((item) => {
+	 const allActs = acts.forEach((item) => {
 		 if(item.is_archived === false)
 	 			return <Activity key={item.id} {...item} />;
 	 });

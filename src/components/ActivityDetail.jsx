@@ -25,8 +25,7 @@ export default function ActivityDetail(props) {
     .then(response => {
 			console.log("data1", response.data);
 					setActs(response.data)
-		}
-				)
+		})
     .catch(error => {
       console.log('Error: ' + error);
       })

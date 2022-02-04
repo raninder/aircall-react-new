@@ -18,7 +18,7 @@ const [acts,setActs] = useState([]);
       	})
 		}, []);
 
-	 const allActs = acts.map((item) => {
+	 const allActs = acts.forEach((item) => {
 		 if(item.is_archived === true)
 	 			return <Activity key={item.id} {...item} />;
 	 });
