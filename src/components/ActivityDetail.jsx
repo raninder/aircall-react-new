@@ -2,7 +2,7 @@ import React, {useEffect,useState } from "react";
 import axios from "axios";
 import Archive from "./Archive.jsx";
 import { useLocation } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,9 +15,7 @@ import {
 export default function ActivityDetail(props) {
 	 const [acts,setActs] = useState({});
 	 const location = useLocation();
-	 const history = useHistory();
-	//  let id = props.id;
-	//  const id = history.location.state.id;
+	 
 		let id = location.state.id;
 		console.log("ididid",id);
 

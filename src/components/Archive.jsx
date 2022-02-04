@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React from "react";
 import axios from "axios";
 import { useLocation } from 'react-router-dom';
 
@@ -31,8 +31,6 @@ export default function Archive(props) {
 	}
 
 	return(
-		<div>
-			
-		</div>
+		<div/>
 	)
 }
