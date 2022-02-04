@@ -39,7 +39,6 @@ export default function ActivityDetail(props) {
 		console.log("time",data);
 		const date = data.toDateString().slice(4);
 		console.log("date",date);	 
-		let text= '';
 		let arch = acts.is_archived;
 return(
 	<div>
